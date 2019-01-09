@@ -10,10 +10,26 @@ Plasmid
 - Ben Keller, <bjkeller@uw.edu>
 
 ### Authors
-  - First Last, A Place
+  - Tileli Amimeur, University of Washington
+  - Nick Bolten, University of Washington
+  - Leandra Brettner, University of Washington
+  - Cameron Cordray, University of Washington
+  - Miles Gander, University of Washington
+  - Samer Halabiya, University of Washington
+  - Seunghee Jang, University of Washington
+  - Yokesh Jayakumar, University of Washington
+  - Jon Luntzel, University of Washington
+  - Abraham Miller, University of Washington
+  - Garrett Newman, University of Washington
+  - Michelle Parks, University of Washington
+  - Sundipta Rao, University of Washington
+  - Ayesha Saleem, University of Washington
+  - Chris Takahashi, University of Washington
+  - Yaoyu Yang, University of Washington
+  - David Younger, University of Washington
 
 ### Acknowledgements
-  - First Last, A Place
+  - Devin Strickland, University of Washington
 
 ### Details
 This workflow and these documents were automatically generated from
