@@ -5,7 +5,7 @@ A workflow for constructing plasmids [[Download](simple-plasmid-construction.aq)
 &copy; University of Washington
 
 ### Keywords
-Plasmid
+Cloning, molecular biology, plasmid, DNA
 ### Maintainer
 - Ben Keller, <bjkeller@uw.edu>
 
@@ -33,7 +33,7 @@ Plasmid
 
 ### Details
 This workflow and these documents were automatically generated from
-[Aquarium](http://www.aquarium.bio) version 2.5.0 and
+[Aquarium](http://www.aquarium.bio) version 2.5.0 alpha and
 [aquadoc](https://github.com/klavinslab/aquadoc) version 1.0.0.
 Make sure that you are running the same or a newer version of Aquarium before you attempt to
 import workflow.
