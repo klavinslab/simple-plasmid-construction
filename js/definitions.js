@@ -241,6 +241,12 @@ var config = {
             },
           
             {
+              name: 'Maxiprep Stock',
+              path: 'object_types/Maxiprep_Stock'  + '.md',
+              type: "local-md"
+            },
+          
+            {
               name: 'Plasmid Glycerol Stock',
               path: 'object_types/Plasmid_Glycerol_Stock'  + '.md',
               type: "local-md"
