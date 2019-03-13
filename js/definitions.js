@@ -37,12 +37,6 @@ var config = {
             },
           
             {
-              name: 'Clean Up Sequencing',
-              path: 'operation_types/Clean_Up_Sequencing' + '.md',
-              type: "local-md"
-            },
-          
-            {
               name: 'Extract Gel Slice',
               path: 'operation_types/Extract_Gel_Slice' + '.md',
               type: "local-md"
@@ -91,20 +85,8 @@ var config = {
             },
           
             {
-              name: 'Send to Sequencing',
-              path: 'operation_types/Send_to_Sequencing' + '.md',
-              type: "local-md"
-            },
-          
-            {
               name: 'Transform Cells',
               path: 'operation_types/Transform_Cells' + '.md',
-              type: "local-md"
-            },
-          
-            {
-              name: 'Upload Sequencing Results',
-              path: 'operation_types/Upload_Sequencing_Results' + '.md',
               type: "local-md"
             },
           
@@ -169,13 +151,13 @@ var config = {
         contents: [
           
             {
-              name: '1 ng/µL Fragment Stock',
+              name: '1 ng/ÂµL Fragment Stock',
               path: 'object_types/1_ng_L_Fragment_Stock'  + '.md',
               type: "local-md"
             },
           
             {
-              name: '1 ng/µL Plasmid Stock',
+              name: '1 ng/ÂµL Plasmid Stock',
               path: 'object_types/1_ng_L_Plasmid_Stock'  + '.md',
               type: "local-md"
             },
@@ -241,12 +223,6 @@ var config = {
             },
           
             {
-              name: 'Maxiprep Stock',
-              path: 'object_types/Maxiprep_Stock'  + '.md',
-              type: "local-md"
-            },
-          
-            {
               name: 'Plasmid Glycerol Stock',
               path: 'object_types/Plasmid_Glycerol_Stock'  + '.md',
               type: "local-md"
@@ -261,12 +237,6 @@ var config = {
             {
               name: 'Primer Aliquot',
               path: 'object_types/Primer_Aliquot'  + '.md',
-              type: "local-md"
-            },
-          
-            {
-              name: 'Sequencing Stripwell',
-              path: 'object_types/Sequencing_Stripwell'  + '.md',
               type: "local-md"
             },
           
