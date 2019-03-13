@@ -1,6 +1,10 @@
 # Plate Transformed Cells
 
-This is run after **Transform Cells** and is a precursor to **Check Plate**. The transformed E. coli cells are plated on either LB + Amp or LB + Kan and incubated at 37 F.
+Plates transforms cells and incubates them.
+
+The transformed E. coli cells are plated on either LB + Amp or LB + Kan and incubated at 37 F.
+
+Ran after **Transform Cells** and is a precursor to **Check Plate**.
 ### Inputs
 
 
@@ -52,6 +56,15 @@ class Protocol
   end
 
   def plate_transformed_aliquots k, aliquots, plates
+    # plates_checkable = []
+    # plates.each do |plate|
+    #   plates_checkable.add({content: plate, check: true})
+    # end
+    
+    plates.each_with_index do |plate, i|
+      plates[i] = ({content: plates[i], check: true})
+    end
+    
     show do 
       title "Plate transformed E coli aliquots"
       check "Use sterile beads to plate THE ENTIRE VOLUME (~200 uL) from the transformed aliquots (1.5 mL tubes) onto the plates, following the table below."
