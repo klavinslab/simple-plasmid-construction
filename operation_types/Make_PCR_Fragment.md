@@ -1,8 +1,12 @@
 # Make PCR Fragment
 
-This protocol gets run after *Extract Fragment* and before *Assemble Plasmid*.
+Makes PCR fragment from primers.
+
 In this protocol, the technician combines primers and templates with a master mix
 in a stripwell. They then run the PCR in a thermocycler.
+
+Ran after **Extract Fragment** and before **Assemble Plasmid**.
+
 ### Inputs
 
 
@@ -412,7 +416,7 @@ class Protocol
       show do
           title "Add Master Mix"
           
-          note "Pipette 25 L of master mix (#{kapa_stock_item}) into stripwells based on the following table:"
+          note "Pipette 25 uL of master mix (#{kapa_stock_item}) into stripwells based on the following table:"
           table stripwell_tab
           warning "USE A NEW PIPETTE TIP FOR EACH WELL AND PIPETTE UP AND DOWN TO MIX."
           check "Cap each stripwell. Press each one very hard to make sure it is sealed."
