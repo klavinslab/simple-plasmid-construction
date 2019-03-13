@@ -1,6 +1,10 @@
 # Assemble Plasmid
 
-This is run after **Make PCR Fragment** (if the fragment is not already in inventory) and is a precursor to **Transform Cells**. The technician combines the inputted array of fragments and, using Gibson Assembly, assembles a plasmid. Each Gibson reaction is fixed at a volume of 5 uL, and so the volume of each fragment is calculated using an algorithm that takes in the number of total fragments in the Gibson reaction and the concentration in ng/uL of each individual fragment. The lower bounds for volume is 0.2 uL; if any fragment is below 0.2 uL, or if the overall reaction is greater than 5 uL, the volumes are tweaked for each fragment until the reaction is once more balanced. The reaction is then placed on a 42 F heat block for one hour.
+Assembles Plasmid.
+
+The technician combines the input array of fragments and, using Gibson Assembly, assembles a plasmid. Each Gibson reaction is fixed at a volume of 5 uL, and so the volume of each fragment is calculated using an algorithm that takes in the number of total fragments in the Gibson reaction and the concentration in ng/uL of each individual fragment. The lower bounds for volume is 0.2 uL; if any fragment is below 0.2 uL, or if the overall reaction is greater than 5 uL, the volumes are tweaked for each fragment until the reaction is once more balanced. The reaction is then placed on a 42 F heat block for one hour.
+
+Ran after **Make PCR Fragment** (if the fragment is not already in inventory) and is a precursor to **Transform Cells**.
 ### Inputs
 
 
@@ -276,7 +280,7 @@ class Protocol
         show do 
             title "Put Reactions on Heat Block"
             warning "Vortex and spin all Gibson Reactions before putting them on the heat block!"
-            note "Put all #{operations.length} on the 50 C heat block"
+            note "Put all #{operations.running.length} on the 50 C heat block"
             note"<a href='https://www.google.com/search?q=1+hr+timer&oq=1+hr+timer&aqs=chrome..69i57j0l5.1684j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=1+hour+timer' target='_blank'>
                 Set a 1 hr timer on Google</a> to set a reminder to start the ecoli_transformation protocol and retrieve the Gibson Reactions."
         end
