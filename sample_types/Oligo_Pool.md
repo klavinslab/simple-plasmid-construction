@@ -1,6 +1,6 @@
 # Sample Type: Oligo Pool
 
-Pool or library of multiple ssDNA variants, with one or more sublibraries. n-th position in array fields corresponds to n-th sublibrary.
+Pool or library of ssDNA oligos. May contain one or more sublibraries. In array fields, the n-th position corresponds to n-th sublibrary. "forward priming site" and "reverse priming site" are read as primer sequences.
   
     
 - **Manufacturer:** string
@@ -44,5 +44,13 @@ Pool or library of multiple ssDNA variants, with one or more sublibraries. n-th 
   
     
 - **sublibrary name (array):** string
+    
+  
+    
+- **forward priming site (array):** string
+    
+  
+    
+- **reverse priming site (array):** string
     
   
