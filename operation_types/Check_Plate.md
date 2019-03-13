@@ -1,6 +1,10 @@
 # Check Plate
 
-This is run the day after **Plate Transformed Cells** and is a precursor to **Make Overnight Suspension**. The plates are pulled from the 37 F incubator and checked for growth and contamination. If there is no growth, the plate is thrown out and the user is notified.
+Checks plates for growth and contamination.
+
+The plates are pulled from the 37 F incubator and checked for growth and contamination. If there is no growth, the plate is thrown out and the user is notified.
+
+Ran the day after **Plate Transformed Cells** and is a precursor to **Make Overnight Suspension**.
 ### Inputs
 
 
