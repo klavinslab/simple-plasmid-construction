@@ -1,4 +1,4 @@
-# Container: 1 ng/ÂµL Fragment Stock
+# Container: 1 ng/µL Fragment Stock
 
 A diluted fragment stock to use as a PCR template
 
