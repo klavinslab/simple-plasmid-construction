@@ -2,4 +2,4 @@
 
 This workflow is a subset of the UW BIOFAB Cloning category based on a plan developed by Devin Strickland.
 
-<img src="images/plan.png">
+<img src="images/simple-plan-construction.svg">
