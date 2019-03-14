@@ -1,4 +1,4 @@
-# Container: 1 ng/ÂµL Plasmid Stock
+# Container: 1 ng/µL Plasmid Stock
 
 Diluted stock for use as a template in PCR
 
