@@ -99,6 +99,44 @@ var config = {
 
     
 
+      {
+
+        category: "Libraries",
+
+        contents: [
+
+          
+            {
+              name: 'Centrifuge',
+              path: 'libraries/Centrifuge' + '.html',
+              type: "local-webpage"
+            },
+          
+            {
+              name: 'Cloning',
+              path: 'libraries/Cloning' + '.html',
+              type: "local-webpage"
+            },
+          
+            {
+              name: 'Feedback',
+              path: 'libraries/Feedback' + '.html',
+              type: "local-webpage"
+            },
+          
+            {
+              name: 'Units',
+              path: 'libraries/Units' + '.html',
+              type: "local-webpage"
+            },
+          
+
+        ]
+
+    },
+
+    
+
     
       { category: "Sample Types",
         contents: [
@@ -151,13 +189,13 @@ var config = {
         contents: [
           
             {
-              name: '1 ng/ÂµL Fragment Stock',
+              name: '1 ng/µL Fragment Stock',
               path: 'object_types/1_ng_L_Fragment_Stock'  + '.md',
               type: "local-md"
             },
           
             {
-              name: '1 ng/ÂµL Plasmid Stock',
+              name: '1 ng/µL Plasmid Stock',
               path: 'object_types/1_ng_L_Plasmid_Stock'  + '.md',
               type: "local-md"
             },
