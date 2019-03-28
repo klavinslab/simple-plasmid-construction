@@ -6,4 +6,3 @@ This workflow can be used for plasmid construction, and is a subset of the UW BI
     alt="diagram of the workflow"
     style="max-width: 400px"
     width="100%">
-
