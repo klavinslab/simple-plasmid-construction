@@ -17,10 +17,10 @@ Ran after **Extract Fragment** and before **Assemble Plasmid**.
   - <a href='#' onclick='easy_select("Sample Types", "Primer")'>Primer</a> / <a href='#' onclick='easy_select("Containers", "Primer Aliquot")'>Primer Aliquot</a>
 
 - **Template** [T]  
-  - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "1 ng/µL Plasmid Stock")'>1 ng/µL Plasmid Stock</a>
+  - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "1 ng/ÂµL Plasmid Stock")'>1 ng/ÂµL Plasmid Stock</a>
   - <a href='#' onclick='easy_select("Sample Types", "Fragment")'>Fragment</a> / <a href='#' onclick='easy_select("Containers", "Fragment Stock")'>Fragment Stock</a>
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Plasmid Stock")'>Plasmid Stock</a>
-  - <a href='#' onclick='easy_select("Sample Types", "Fragment")'>Fragment</a> / <a href='#' onclick='easy_select("Containers", "1 ng/µL Fragment Stock")'>1 ng/µL Fragment Stock</a>
+  - <a href='#' onclick='easy_select("Sample Types", "Fragment")'>Fragment</a> / <a href='#' onclick='easy_select("Containers", "1 ng/ÂµL Fragment Stock")'>1 ng/ÂµL Fragment Stock</a>
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Unverified Plasmid Stock")'>Unverified Plasmid Stock</a>
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Gibson Reaction Result")'>Gibson Reaction Result</a>
   - <a href='#' onclick='easy_select("Sample Types", "DNA Library")'>DNA Library</a> / <a href='#' onclick='easy_select("Containers", "50X PCR Template")'>50X PCR Template</a>
@@ -175,10 +175,10 @@ class Protocol
     # only use inputs that haven't been diluted and that don't have diluted stocks already
     ops_w_undiluted_template = operations.reject { true }
     operations.each do |op|
-        next if op.input(input).object_type.name.include?("1 ng/µL") || op.input(input).object_type.name.include?("50X PCR Template") || op.input(input).object_type.name.include?("Unverified PCR Fragment")
+        next if op.input(input).object_type.name.include?("1 ng/L") || op.input(input).object_type.name.include?("50X PCR Template") || op.input(input).object_type.name.include?("Unverified PCR Fragment")
         
         sample = op.input(input).sample
-        ot_name = op.input(input).object_type.name.include?("Unverified") ? "1 ng/µL Plasmid Stock" : "1 ng/µL " + sample.sample_type.name + " Stock"
+        ot_name = op.input(input).object_type.name.include?("Unverified") ? "1 ng/L Plasmid Stock" : "1 ng/L " + sample.sample_type.name + " Stock"
         diluted_stock = sample.in(ot_name).first
         
         if diluted_stock
@@ -205,7 +205,7 @@ class Protocol
     
     # dilute stocks
     show do
-      title "Make 1 ng/µL Template Stocks"
+      title "Make 1 ng/L Template Stocks"
       
       check "Grab #{ops_w_undiluted_template.length} 1.5 mL tubes, label them with #{ops_w_undiluted_template.map { |op| op.temporary[:diluted_stock].id }.join(", ")}"
       check "Add template stocks and water into newly labeled 1.5 mL tubes following the table below"
