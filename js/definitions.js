@@ -25,8 +25,14 @@ var config = {
 
           
             {
-              name: 'Assemble Plasmid',
-              path: 'operation_types/Assemble_Plasmid' + '.md',
+              name: 'Assemble Plasmid Gibson',
+              path: 'operation_types/Assemble_Plasmid_Gibson' + '.md',
+              type: "local-md"
+            },
+          
+            {
+              name: 'Assemble Plasmid Golden Gate',
+              path: 'operation_types/Assemble_Plasmid_Golden_Gate' + '.md',
               type: "local-md"
             },
           
@@ -189,13 +195,13 @@ var config = {
         contents: [
           
             {
-              name: '1 ng/µL Fragment Stock',
+              name: '1 ng/ÂµL Fragment Stock',
               path: 'object_types/1_ng_L_Fragment_Stock'  + '.md',
               type: "local-md"
             },
           
             {
-              name: '1 ng/µL Plasmid Stock',
+              name: '1 ng/ÂµL Plasmid Stock',
               path: 'object_types/1_ng_L_Plasmid_Stock'  + '.md',
               type: "local-md"
             },
@@ -251,6 +257,12 @@ var config = {
             {
               name: 'Gibson Reaction Result',
               path: 'object_types/Gibson_Reaction_Result'  + '.md',
+              type: "local-md"
+            },
+          
+            {
+              name: 'Golden Gate Stripwell',
+              path: 'object_types/Golden_Gate_Stripwell'  + '.md',
               type: "local-md"
             },
           
