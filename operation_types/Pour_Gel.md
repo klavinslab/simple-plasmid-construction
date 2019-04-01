@@ -15,7 +15,6 @@ Is a precursor to **Run Gel**.
 
 
 - **Lane** [G]  Part of collection
-  - NO SAMPLE TYPE / <a href='#' onclick='easy_select("Containers", "50 mL 0.8 Percent Agarose Gel in Gel Box")'>50 mL 0.8 Percent Agarose Gel in Gel Box</a>
 
 ### Precondition <a href='#' id='precondition'>[hide]</a>
 ```ruby
@@ -105,8 +104,8 @@ class Protocol
   # Tells the technician to add GelGreen to each gel.
   def add_gel_green
     show do
-      title "For each gel, Add 5 µL GelGreen"
-      note "Using a 10 µL pipetter, take up 5 µL of GelGreen into the pipet tip. Expel the GelGreen directly into the molten agar (under the surface), then swirl to mix."
+      title "For each gel, Add 5 L GelGreen"
+      note "Using a 10 L pipetter, take up 5 L of GelGreen into the pipet tip. Expel the GelGreen directly into the molten agar (under the surface), then swirl to mix."
       warning "GelGreen is supposedly safe, but stains DNA and can transit cell membranes (limit your exposure)."
       warning "GelGreen is photolabile. Limit its exposure to light by putting it back in the box."
       # image "gel_add_gelgreen"
@@ -118,7 +117,7 @@ class Protocol
     show do
       title "Pour and label the gel(s)"
       note "Using a gel pouring autoclave glove, pour agarose from one flask into the casting tray. 
-            Pour slowly and in a corner for best results. Pop any bubbles with a 10 µL pipet tip. Repeat for each gel"
+            Pour slowly and in a corner for best results. Pop any bubbles with a 10 L pipet tip. Repeat for each gel"
       operations.output_collections["Lane"].each_with_index do | gel, i |
           check "Write id #{gel.id} on piece of lab tape and affix it to the side of the gel box."
       end
