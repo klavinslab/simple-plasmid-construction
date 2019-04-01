@@ -395,7 +395,7 @@ module Centrifuge
     show do
       title 'Go to Bagley to get ice (Skip if you already have ice)'
       note 'Walk to ice machine room on the second floor in Bagley with a '\
-           'large red bucket, fill the bucket ¾ full with ice.'
+           'large red bucket, fill the bucket  full with ice.'
       note 'If unable to go to Bagley, use ice cubes to make a water bath (of '\
            'mostly ice) or use the chilled aluminum bead bucket. (if using '\
            'aluminum bead bucket place it back in freezer between spins)'
