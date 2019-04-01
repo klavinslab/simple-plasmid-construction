@@ -15,7 +15,6 @@ Ran after *Pour Gel* and is a precursor to *Extract Fragment*.
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Stripwell of Digested Plasmid")'>Stripwell of Digested Plasmid</a>
 
 - **Gel** [L]  Part of collection
-  - NO SAMPLE TYPE / <a href='#' onclick='easy_select("Containers", "50 mL 0.8 Percent Agarose Gel in Gel Box")'>50 mL 0.8 Percent Agarose Gel in Gel Box</a>
 
 
 
