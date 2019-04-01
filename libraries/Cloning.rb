@@ -48,7 +48,7 @@ module Cloning
           ops.each { |op| volume += op.temporary[vol_sym] }
           volume = (volume*100).round / 100.0
           choices = options[:check_contam] ? ["Yes", "No", "Contamination is present"] : ["Yes", "No"]
-          select choices, var: "#{item.id}", label: "Is there at least #{volume} µL of #{item.id}?", default: 0
+          select choices, var: "#{item.id}", label: "Is there at least #{volume} L of #{item.id}?", default: 0
         end
       end
       ops_by_item.each do |item, ops|
