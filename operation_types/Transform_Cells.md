@@ -12,7 +12,7 @@ Ran after **Assemble Plasmid** and is a precursor to **Plate Transformed Cells**
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Gibson Reaction Result")'>Gibson Reaction Result</a>
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Ligation product")'>Ligation product</a>
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "Plasmid Stock")'>Plasmid Stock</a>
-  - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "1 ng/µL Plasmid Stock")'>1 ng/µL Plasmid Stock</a>
+  - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "1 ng/ÂµL Plasmid Stock")'>1 ng/ÂµL Plasmid Stock</a>
   - <a href='#' onclick='easy_select("Sample Types", "Plasmid")'>Plasmid</a> / <a href='#' onclick='easy_select("Containers", "DNA Mix")'>DNA Mix</a>
 
 - **Comp Cells** [C]  Part of collection
@@ -311,7 +311,7 @@ class Protocol
         title "Prepare plasmid stocks"
         
         ops_for_dilution.each do |op|
-          i = produce new_sample op.input(INPUT).sample.name, of: op.input(INPUT).sample_type, as: "1 ng/µL Plasmid Stock"
+          i = produce new_sample op.input(INPUT).sample.name, of: op.input(INPUT).sample_type, as: "1 ng/L Plasmid Stock"
           
           op.temporary[:old_stock] = op.input(INPUT).item
           op.input(INPUT).item.associate :from, op.temporary[:old_stock].id
